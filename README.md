@@ -1,103 +1,104 @@
-🏠 HomeValue-AI: Predictive Real Estate Valuation & Market Analysis
+# 🏠 HomeValue-AI: Predictive Real Estate Valuation & Market Analysis
 
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Regression-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-
-
-🏛️ Project Overview
+## 🏛️ Project Overview
 
 HomeValue-AI is an end-to-end machine learning solution designed to predict residential property prices with high precision. By leveraging a comprehensive dataset of housing features (area, bedrooms, location, etc.), this project utilizes advanced regression techniques to provide accurate market valuations. The goal is to empower real estate investors and homeowners with data-driven insights into property worth, reducing the uncertainty of manual appraisals.
 
+---
 
+## 🔍 Key Machine Learning Insights
 
+| Phase | Technical Implementation | Business/Analytical Value |
+|---|---|---|
+| **Exploratory Data Analysis** | Multivariant correlation mapping | Identified "Living Area" as the #1 price driver |
+| **Feature Engineering** | Categorical encoding & outlier removal | Improved model R-squared by 15% |
+| **Model Selection** | Comparative Regression Analysis | Achieved a robust balance between bias and variance |
+| **Deployment** | Serialized Model (`.pkl`) export | Ready for integration into web/mobile apps |
 
-🔍 Key Machine Learning Insights
+### 💡 High-Impact Capabilities
 
-Phase
-Technical Implementation
-Business/Analytical Value
-Exploratory Data Analysis
-Multivariant correlation mapping.
-Identified "Living Area" as the #1 price driver.
-Feature Engineering
-Categorical encoding & outlier removal.
-Improved model R-squared by 15%.
-Model Selection
-Comparative Regression Analysis.
-Achieved a robust balance between bias and variance.
-Deployment
-Serialized Model (.pkl) export.
-Ready for integration into web/mobile apps.
+- **End-to-End Pipeline** — Covers the entire ML lifecycle, from raw data cleaning in `Housing.csv` to model testing in Jupyter Notebooks.
+- **Production-Ready** — Includes a serialized `house_price_model.pkl` file, allowing the model to be instantly deployed into a production environment.
+- **Rigorous Validation** — Features a dedicated `model test.ipynb` to ensure the model's predictive power remains stable across unseen datasets.
 
+---
 
+## 🛠️ Technical Architecture
 
+### Project Workflow
 
-High-Impact Capabilities
+1. **Data Ingestion** — Processing the `Housing.csv` dataset.
+2. **Preprocessing** — Handling missing values, feature scaling, and encoding categorical variables.
+3. **Training** — Implementing regression algorithms to map features to house prices.
+4. **Serialization** — Saving the trained model using `pickle` for future use.
+5. **Testing** — Validating predictions against test samples to ensure accuracy.
 
-• End-to-End Pipeline: Covers the entire ML lifecycle—from raw data cleaning in Housing.csv to model testing in Jupyter Notebooks.
+### Tech Stack
 
-• Production-Ready: Includes a serialized house_price_model.pkl file, allowing the model to be instantly deployed into a production environment.
+| Component | Tool Used |
+|---|---|
+| **Language** | Python 3.10+ |
+| **Libraries** | Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn |
+| **Environment** | Jupyter Notebook |
+| **Deployment** | Pickle (Serialization) |
 
-• Rigorous Validation: Features a dedicated model test.ipynb to ensure the model's predictive power remains stable across unseen datasets.
+---
 
+## 🚀 How to Run
 
+1. **Clone the repository**
+```bash
+   git clone https://github.com/shubham333k/House-price-prediction.git
+   cd House-price-prediction
+```
 
+2. **Install dependencies**
+```bash
+   pip install scikit-learn pandas numpy matplotlib seaborn jupyter
+```
 
-🛠️ Technical Architecture
+3. **Launch Jupyter Notebook**
+```bash
+   jupyter notebook
+```
 
-Project Workflow
+4. Open **`House Price Prediction .ipynb`** to explore the full training/EDA pipeline, or **`model test.ipynb`** to test predictions using the pre-trained `house_price_model.pkl`.
 
-1. Data Ingestion: Processing the Housing.csv dataset.
+---
 
-2. Preprocessing: Handling missing values, feature scaling, and encoding categorical variables.
+## 📂 Repository Structure
 
-3. Training: Implementing regression algorithms to map features to house prices.
+```
+House-price-prediction/
+├── House Price Prediction .ipynb   # Core ML Training & EDA
+├── model test.ipynb                 # Model Validation & Testing
+├── house_price_model.pkl            # Serialized Production-Ready Model
+├── Housing.csv                      # Raw Residential Dataset
+└── README.md                        # Executive Documentation
 
-4. Serialization: Saving the trained model using pickle for future use.
+```
 
-5. Testing: Validating predictions against test samples to ensure accuracy.
+---
 
-Tech Stack
+## 📄 License
 
-• Language: Python 3.10+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-• Libraries: Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn
+---
 
-• Environment: Jupyter Notebook
+## 🤝 Connect & Collaborate
 
-• Deployment: Pickle (Serialization)
+**Shubham Kumar**
+*Computer Science (AIML) Undergraduate*
 
+- 💼 LinkedIn: [shubham-kumar-565040253](https://www.linkedin.com/in/shubham-kumar-565040253/)
+- 🐙 GitHub: [@shubham333k](https://github.com/shubham333k)
+- 📧 Email: shubhamjhanjhot333k@gmail.com
 
-
-
-📂 Repository Structure
-
-Plain Text
-
-
-├── House Price Prediction .ipynb  # Core ML Training & EDA
-├── model test.ipynb               # Model Validation & Testing
-├── house_price_model.pkl          # Serialized Production-Ready Model
-├── Housing.csv                    # Raw Residential Dataset
-└── README.md                      # Executive Documentation
-
-
-
-
-
-
-🤝 Connect & Collaborate
-
-Shubham Kumar
-Computer Science (AIML) Undergraduate
-
-• LinkedIn: https://www.linkedin.com/in/shubham-kumar-565040253/
-
-• GitHub: https://github.com/shubham333k
-
-• Email: shubhamjhanjhot333k@gmail.com
-
-
-
-
-This project was developed as part of a Machine Learning Portfolio focused on Predictive Real Estate Analytics.
+*This project was developed as part of a Machine Learning Portfolio focused on Predictive Real Estate Analytics.*
 
